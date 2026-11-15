@@ -1,0 +1,54 @@
+BUG-BOUNTY-CVE-HUNT
+PROPRIETARY MATERIAL - RIGHTS RESERVATION NOTICE
+
+Copyright (c) 2026 Web Security Labs - @websecuritylabs.
+All rights reserved, except where a separate license or applicable law provides otherwise.
+
+1. Covered material
+
+This notice reserves the rights held by the project owner in original project
+material that has not been made available under a separate license. It applies
+only to rights the project owner actually holds. It does not assert ownership
+over third-party disclosures, copied extracts, upstream code, or contributions
+owned by other people.
+
+2. No general license grant
+
+This is a personal, proprietary research project. This notice provides no
+general permission to reproduce, modify, distribute, sublicense, sell, or
+publicly disclose the covered material. Any additional permission must come
+from the relevant rights holder under a separate written agreement.
+
+The rights holder's own use of its material is unaffected. Any permissions
+arising under applicable law, a valid separate license or agreement, or the
+hosting platform's applicable terms remain unaffected.
+
+3. Separate and pre-existing licenses
+
+A file-level license or an applicable upstream license governs the material
+within its scope. Such material is excluded from the restrictions in this
+notice to the extent those restrictions would conflict with its license.
+In particular, existing MIT and Apache-2.0 declarations are not replaced or
+withdrawn by this notice. It does not revoke permissions already validly
+granted for earlier copies or versions.
+
+Consult THIRD_PARTY_NOTICES.md and the relevant files and upstream sources.
+The notice inventory is informational; an omitted entry does not erase
+another rights holder's ownership or license.
+
+4. Research corpus and external components
+
+Public reports, source extracts, platform material, trademarks, external tools,
+and other third-party components retain their respective owners and applicable
+terms. Public availability alone does not establish a blanket redistribution
+license. This notice grants no additional rights in that material.
+
+5. Research output and support
+
+No promises are made about accuracy, security outcomes, suitability, support,
+or availability. No liability is accepted beyond obligations that applicable
+law does not allow the relevant rights holder to exclude.
+
+This is a rights-reservation notice for otherwise unlicensed original
+material, not an open-source license or a replacement for separately licensed
+components.
