@@ -2,7 +2,7 @@
 
 **Expert-level AI agent skills for advanced bug bounty and white-box CVE research.**
 
-The specialist methodologies are the core of this project: deep source auditing, analysis of interacting security controls, and evidence-based vulnerability chaining. The advanced workflows investigate parser and representation mismatches, deferred consumers, identity and state transitions, and trust boundaries across components.
+The specialist methodologies are the core of this project: deep source auditing, analysis of interacting security controls, evidence-based vulnerability chaining, and explicit design criteria for reliable AI-assisted research. The advanced workflows investigate parser and representation mismatches, deferred consumers, identity and state transitions, and trust boundaries across components.
 
 The toolkit combines these skills with Semgrep research rules, CodeQL analysis guidance, controlled local labs, and a corpus of thousands of public HackerOne and Bugcrowd disclosure records. It supports the path from a falsifiable security hypothesis to a supported finding, a focused fix, and a meaningful regression check.
 
@@ -26,6 +26,25 @@ The specialist workflows emphasize two demanding forms of security investigation
 The [SSRF evidence contract](SKILLS/ssrf/references/evidence-reporting.md) and [GraphQL evidence contract](SKILLS/graphql_api/references/evidence-and-reporting.md) provide implemented examples of these requirements. Scope and eligibility remain defined by each specialist. Each conclusion is tied to its evidence, preconditions, and demonstrated impact.
 
 This is a personal security research workspace intended for private use. Skills are Markdown documents with YAML metadata, accompanied by selected executable helpers. Choose and load the relevant documents through the agent or workflow you actually use, verifying any tool integration against the local configuration.
+
+## Agent reliability and evidence discipline
+
+The project also treats the reliability of AI-assisted research as a design and review concern. Its skill-engineering objectives target recurring agent failures such as losing the original context, inventing unsupported findings, inflating severity, and weakening evidence rules when additional modules are loaded.
+
+The review criteria can be summarized in eight reliability themes:
+
+| Failure mode targeted | Design and review requirement |
+| --- | --- |
+| **1. Context drift and instruction loss** | Keep scope, stack, actors, assumptions, and baselines in a durable task record; recheck decisive constraints before reporting. |
+| **2. Unsupported claims and premature confirmation** | Distinguish observed evidence from inference and proposed work from validated claims. Keep a conclusion pending when a decisive link remains unestablished. |
+| **3. Misleading response signals and false positives** | Require meaningful baselines and negative controls; account for empty/public responses, application fallbacks, caches, gateways, and dynamic noise. |
+| **4. Pressure to produce findings or inflate severity** | Accept zero confirmed findings, downgrade unsupported claims, and base severity on the established consequence and prerequisites. |
+| **5. Confirmation bias and missing refutation** | State competing explanations and attempt a discriminating control before accepting a developed hypothesis. |
+| **6. Poisoning through untrusted target content** | Treat source comments, responses, reflected claims, and supplied artifacts as evidence to assess; embedded instructions do not redefine the research task. |
+| **7. Mode, scope, and technical drift** | Keep black-box observations, white-box source claims, stack/version semantics, and authorized actions aligned with the chosen specialist and available visibility. |
+| **8. Add-on override and context overload** | Load relevant supporting modules conditionally, preserve the primary evidence rules, keep references resolvable, and manage duplication and instruction volume. |
+
+These are design and audit requirements. Their implementation and review status must be checked for the particular skill, revision, model, and workflow in use. A document audit is not an observed reliability benchmark for a long-running agent session.
 
 ## What is included
 
