@@ -1,10 +1,31 @@
 # Bug-Bounty-CVE-Hunt
 
-Advanced bug bounty and CVE research toolkit combining AI agent skills, Semgrep rules, CodeQL guidance, local labs, and a corpus of public HackerOne and Bugcrowd disclosure records for web/API security testing, source code auditing, and evidence-based vulnerability validation.
+**Expert-level AI agent skills for advanced bug bounty and white-box CVE research.**
 
-This is a personal security research workspace intended for private use. It brings together specialist instructions, source-review workflows, public-disclosure research, and controlled local verification. Use it to turn a security hypothesis into a supported finding, a focused fix, and a meaningful regression check.
+The specialist methodologies are the core of this project: deep source auditing, analysis of interacting security controls, and evidence-based vulnerability chaining. The advanced workflows investigate parser and representation mismatches, deferred consumers, identity and state transitions, and trust boundaries across components.
 
-The repository contains reusable guidance and selected executable helpers. Skills are Markdown documents with YAML metadata; choose and load them through the agent or workflow you actually use. Their presence does not imply automatic installation, execution, or compatibility with every AI tool.
+The toolkit combines these skills with Semgrep research rules, CodeQL analysis guidance, controlled local labs, and a corpus of thousands of public HackerOne and Bugcrowd disclosure records. It supports the path from a falsifiable security hypothesis to a supported finding, a focused fix, and a meaningful regression check.
+
+## Expert-level research methodology
+
+The specialist workflows emphasize two demanding forms of security investigation:
+
+| Research focus | What the methodology requires |
+| --- | --- |
+| **Deep vulnerability research** | Resolve a nontrivial interaction between representations, controls, components, trust contexts, or state transitions. Establish the exact mechanism, effective defenses, security invariant, and a discriminating control. |
+| **Vulnerability chain analysis** | Compose independently established primitives across an additional security boundary. Document the dependency graph, compatible actors/state/versions, validated and conditional links, and a control that would break the chain. |
+
+### What the advanced workflows emphasize
+
+- **Deep source and control tracing:** follow attacker-controlled inputs through transformations, effective guards, and the actual sink or security decision, with reproducible source locations and version context.
+- **Control interaction analysis:** investigate validation/use disagreements, parser differentials, second-order processing, deferred execution, and identity/state binding under the actual implementation.
+- **Hypothesis-driven validation:** state falsifiable predictions, plausible alternative explanations, meaningful negative controls, and the precise evidence needed to confirm or refute the mechanism.
+- **Evidence-based chains:** establish each independent primitive and the additional crossed boundary; record compatible prerequisites and unresolved links.
+- **Finding-to-fix discipline:** keep finding validation, patch review, and executed regression results separate, preserving legitimate behavior and documenting remaining gaps.
+
+The [SSRF evidence contract](SKILLS/ssrf/references/evidence-reporting.md) and [GraphQL evidence contract](SKILLS/graphql_api/references/evidence-and-reporting.md) provide implemented examples of these requirements. Scope and eligibility remain defined by each specialist. Each conclusion is tied to its evidence, preconditions, and demonstrated impact.
+
+This is a personal security research workspace intended for private use. Skills are Markdown documents with YAML metadata, accompanied by selected executable helpers. Choose and load the relevant documents through the agent or workflow you actually use, verifying any tool integration against the local configuration.
 
 ## What is included
 
@@ -40,7 +61,7 @@ Choose the specialist closest to the security boundary under investigation. Read
 | Command/code/template injection | Interpreter boundaries, argument handling, deferred processing, and conditional chains. | [rce_injection](SKILLS/rce_injection/) |
 | WordPress | Core/plugin/theme auditing, capabilities, hooks, metadata, and controlled runtime verification. | [wordpress](SKILLS/wordpress/) |
 
-The skill index is a navigation aid. Check the actual files and their declared scope before relying on a module or roadmap item. Research tiers are internal complexity categories; they are separate from severity, certainty, and CVE eligibility.
+The skill index is a navigation aid. Check the actual files and their declared scope before relying on a module or roadmap item. Use the relevant evidence requirements when assessing severity, certainty, and CVE eligibility.
 
 ## A practical workflow
 
@@ -170,7 +191,7 @@ Use documented artifacts as entry points rather than relying on incidental datab
 
 ## Research and evidence boundaries
 
-Use the toolkit only with an established authorization and scope. Prefer source inspection and controlled local evidence, minimize collected sensitive data, and preserve the distinction between a proposed test and an executed result. Let each specialist define its own proof and stop conditions. Scope, impact, research tier, patch status, and disclosure status are separate decisions.
+Use the toolkit only with an established authorization and scope. Prefer source inspection and controlled local evidence, minimize collected sensitive data, and preserve the distinction between a proposed test and an executed result. Let each specialist define its own proof and stop conditions. Scope, impact, patch status, and disclosure status are separate decisions.
 
 Original public-report authors and programs retain credit for their disclosures. Source summaries and AI-assisted classifications can be incomplete or wrong. Neither a public report, a scanner result, nor this repository establishes a new CVE or guarantees a bounty.
 
