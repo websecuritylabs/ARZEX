@@ -1,8 +1,8 @@
-# ALVEX
+# ARZEX
 
 **An AI-assisted vulnerability research framework for advanced bug bounty and white-box CVE research.**
 
-ALVEX combines specialist agent skills, structured research workflows, static analysis tooling, controlled labs, and a public-disclosure research corpus to support deep source auditing, vulnerability chaining, and evidence-based validation.
+ARZEX combines specialist agent skills, structured research workflows, static analysis tooling, controlled labs, and a public-disclosure research corpus to support deep source auditing, vulnerability chaining, and evidence-based validation.
 
 The framework includes Semgrep research rules, CodeQL analysis guidance, and thousands of public HackerOne and Bugcrowd disclosure records. Its workflows investigate parser and representation mismatches, deferred consumers, identity and state transitions, and trust boundaries across components. It supports the path from a falsifiable security hypothesis to a supported finding, a focused fix, and a meaningful regression check.
 
@@ -192,7 +192,7 @@ For an IDOR/BOLA study, for example, compare reports about missing ownership che
 ## Repository layout
 
 ```text
-ALVEX/
+ARZEX/
 |-- README.md
 |-- LICENSE
 |-- THIRD_PARTY_NOTICES.md
